@@ -22,15 +22,15 @@ The example given in assignment file has been used for unit tests
 * Task 7: algorithm explained below
 
 ## Algorithm
-initialise visited array of size=vertices with -1
-compute adjacency list of the mesh
-for each vertice do:
-  if vertex has not been visited:
-    push vertex to connected_components_sublist
-    set visited of this vertice as connected_component index in connected_components
-    if color of adjacent vertices is same then add the vertex to component and set visited as connected_component index in connected components
-  sort the component added to maintain ascending order of vertex
-  else
-    add all non visited same colored adjacent vertices to the connected component associated with this vertex
-    sort to maintain ascending order
+* initialise visited array of size=vertices with -1
+* compute adjacency list of the mesh
+* for each vertice do
+    * if vertex has not been visited:
+      * push vertex to connected_components_sublist
+      * set visited of this vertice as connected_component index in connected_components
+      * if color of adjacent vertices is same then add the vertex to component and set visited as connected_component index in connected components
+    * sort the component added to maintain ascending order of vertex
+    * else
+      * add all non visited same colored adjacent vertices to the connected component associated with this vertex
+      * sort to maintain ascending order
     
